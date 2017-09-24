@@ -3,10 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import { withStyles } from 'material-ui/styles';
 import classnames from 'classnames';
-
+import withRoot from './withRoot';
 const styles = {
   main: {
-    backgroundColor: 'red'
+    backgroundColor: 'blue'
   }
 };
 
@@ -28,4 +28,4 @@ class App extends Component {
   }
 }
 
-export default withStyles(styles)(App);
+export default withRoot(withStyles(styles)(App));
